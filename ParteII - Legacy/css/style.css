@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.navbar-brand {
+    color: #d4af37 !important;
+}
+
+.navbar-brand small {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.banner {
+    min-height: 500px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        #333;
+}
+
+.banner h1,
+.banner h2 {
+    color: #d4af37;
+}
+
+.titulo-secao {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.titulo-secao::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #d4af37;
+    margin-top: 10px;
+}
+
+.text-center .titulo-secao::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icone-servico {
+    font-size: 40px;
+    color: #b8962e;
+}
+
+.card {
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+.btn-warning {
+    background-color: #d4af37;
+    border-color: #d4af37;
+}
+
+iframe {
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        min-height: 400px;
+        text-align: center;
+    }
+}
+/* Fotos dos depoimentos */
+.foto-cliente {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #d4af37;
+}
